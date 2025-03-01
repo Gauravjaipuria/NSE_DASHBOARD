@@ -1,6 +1,3 @@
-!pip install nselib
-!pip install pandas_market_calendars
-
 from nselib import capital_market
 from nselib import derivatives
 import streamlit as st
