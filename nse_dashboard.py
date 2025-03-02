@@ -33,7 +33,7 @@ def fetch_data():
             
             if data_info in ['price_volume_and_deliverable_position_data', 'deliverable_position_data']:
                 symbol = st.sidebar.text_input('Enter Symbol', 'VEDL')
-                from_date = st.sidebar.date_input('From Date','01-01-2025')
+                from_date = st.sidebar.text_input('From Date','01-01-2025')
                 to_date = st.sidebar.date_input('To Date').strftime('%d-%m-%Y')
                 return getattr(capital_market, data_info)(symbol, from_date, to_date)
 
